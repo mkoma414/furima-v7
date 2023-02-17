@@ -10,14 +10,14 @@ ja:
         birthday: 誕生日
       item:
         name: 商品名 
-        content: 商品の説明
+        explanation: 商品の説明
         image: 画像
         price: 価格
         category_id : カテゴリー
         status_id : 商品の状態 
-        shipping_cost_id : 配送料の負担
+        payment_user_id : 配送料の負担
         prefecture_id : 発送元の地域
-        shipping_day_id : 発送までの日数
+        days_to_deliver_id : 発送までの日数
   activemodel:
     attributes:
       order_address:
