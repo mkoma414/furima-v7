@@ -1,8 +1,6 @@
 function calculate_price() {
-  console.log("aaaaaa");
   const priceInput = document.getElementById("item-price");
   priceInput.addEventListener("input" , ()=> {
-    console.log("bbbbb");
       const inputValue = priceInput.value;
       const addTaxDom = document.getElementById("add-tax-price");
       addTaxDom.innerHTML = Math.floor(inputValue / 10);
@@ -12,5 +10,5 @@ function calculate_price() {
 
 };
 
-window.addEventListener('turbo:load', calculate_price);
+window.addEventListener('load', calculate_price);
 
