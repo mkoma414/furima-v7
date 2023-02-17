@@ -80,8 +80,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_14_062944) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
-    t.string "first_name_kanji", null: false
-    t.string "last_name_kanji", null: false
+    t.string "first_name", null: false
+    t.string "last_name", null: false
     t.string "first_name_kana", null: false
     t.string "last_name_kana", null: false
     t.date "birthday", null: false
