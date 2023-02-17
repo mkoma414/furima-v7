@@ -4,9 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
-  KANJI_REGEX = /\A[ぁ-んァ-ヶ一-龥々ー]+\z/.freeze
-  KATAKANA_REGEX = /\A[ァ-ヶー－]+\z/.freeze
+  PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i
+  KANJI_REGEX = /\A[ぁ-んァ-ヶ一-龥々ー]+\z/
+  KATAKANA_REGEX = /\A[ァ-ヶー－]+\z/
   validates :password, format: { with: PASSWORD_REGEX }
   validates :name, presence: true
   validates :last_name, presence: true
