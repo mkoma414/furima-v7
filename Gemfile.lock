@@ -181,12 +181,15 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.14.2-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.22.1)
     parser (3.2.1.0)
       ast (~> 2.4.1)
     payjp (0.0.10)
       rest-client (~> 2.0)
+    pg (1.4.5)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -332,6 +335,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   active_hash
@@ -349,6 +353,7 @@ DEPENDENCIES
   mini_magick
   mysql2 (~> 0.5)
   payjp
+  pg
   pry-rails
   puma (~> 5.0)
   rails (~> 7.0.0)
