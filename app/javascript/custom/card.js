@@ -30,4 +30,4 @@ const pay = () => {
   });
 };
 
-window.addEventListener("load", pay);
+window.addEventListener("turbo:load", pay);
