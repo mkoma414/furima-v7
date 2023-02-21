@@ -10,5 +10,5 @@ function calculate_price() {
 
 };
 
-window.addEventListener('turbo:render', calculate_price);
+window.addEventListener('turbo:load', calculate_price);
 console.log("init");
