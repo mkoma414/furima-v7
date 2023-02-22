@@ -77,6 +77,16 @@
   align-items: flex-end;
 }
 
+.lists-right .logout {
+  border: none;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.lists-right .logout:hover {
+  cursor: pointer;
+}
+
 
 .user-nickname {
   text-decoration: none;

@@ -1,5 +1,49 @@
 const pay = () => {
-  const payjp = Payjp('pk_test_48674bfea9795c1ee9fd1b2f')// PAY.JPテスト公開鍵
+
+  console.log("function is called");
+
+  // var pathName = location.pathname;
+  // if (!pathName.match(/order/)){
+  //   return;
+  // }
+
+  // console.log(typeof payjp);
+
+  // console.log(typeof payjp);
+
+  // if (instanceof payjp !== 'undefined') {
+  //   console.log('変数が定義されている');
+  // }else{
+  //   console.log('変数が定義されていない');
+  // }
+
+
+  // if (typeof payjp === "undefined") {
+  //   let payjp = Payjp('pk_test_48674bfea9795c1ee9fd1b2f')// PAY.JPテスト公開鍵
+  // }
+
+  // try {
+  //   const payjp = null;
+  // }
+  // catch {
+
+  // }
+
+
+  // try {
+  //   console.log(payjp);
+  // }
+  // catch(e){
+  //   console.log(e);
+  //   console.log("payjpまだ宣言してないよ");
+  // }
+
+   const payjp = Payjp('pk_test_48674bfea9795c1ee9fd1b2f')// PAY.JPテスト公開鍵
+
+
+
+  // console.log(typeof payjp);
+
   const elements = payjp.elements();
   const numberElement = elements.create('cardNumber');
   const expiryElement = elements.create('cardExpiry');
@@ -30,4 +74,4 @@ const pay = () => {
   });
 };
 
-window.addEventListener("turbo:load", pay);
+window.addEventListener("load", pay);

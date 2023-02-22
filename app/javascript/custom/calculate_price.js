@@ -10,5 +10,5 @@ function calculate_price() {
 
 };
 
-window.addEventListener('turbo:load', calculate_price);
+window.addEventListener('load', calculate_price);
 
