@@ -54,6 +54,5 @@ test:
 #
 production:
   <<: *default
-  <<: *default
   adapter: postgresql
   url: <%= ENV['DATABASE_URL'] %>
