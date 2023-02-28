@@ -30,7 +30,6 @@ set :branch, "main"
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   task :restart do
-    invoke  'puma:stop'
-    invoke! 'puma:start'
+    invoke! 'puma:restart'
   end
 end
