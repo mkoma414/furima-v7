@@ -11,7 +11,7 @@ set :repo_url,  'git@github.com:mkoma414/furima-v7.git'
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
 set :rbenv_type, :user
-set :rbenv_ruby, '3.2.0' #カリキュラム通りに進めた場合、’2.6.5’ です
+set :rbenv_ruby, '3.2.0' 
 
 # どの公開鍵を利用してデプロイするか
 set :ssh_options, auth_methods: ['publickey'],
@@ -28,8 +28,10 @@ set :branch, "main"
 
 # デプロイ処理が終わった後、Unicornを再起動するための記述
 after 'deploy:publishing', 'deploy:restart'
-namespace :deploy do
-  task :restart do
-    invoke! 'puma:restart'
-  end
-end
+# namespace :deploy do
+#   task :restart do
+#     invoke! 'puma:restart'
+#   end
+# end
+
+restart_command 'bundle exec puma -e production'
